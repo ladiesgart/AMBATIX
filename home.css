@@ -1,0 +1,232 @@
+/* Mendefinisikan variabel warna */
+:root {
+  --hitam: #3c2525;
+  --maroon: #630000;
+  --pink: #D8B6A4;
+  --putih: #EEEBDD;
+}
+
+/* Reset gaya default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+/* Gaya dasar halaman */
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--pink);
+  color: var(--maroon);
+  min-height: 2000px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 4%;
+  background-color: var(--maroon);
+  border-bottom: 1px solid var(--maroon);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 9999;
+}
+
+.navbar .navbarlogo {
+  margin-right: auto;
+}
+
+.navbar .navbarnih a {
+  color: var(--pink);
+  display: inline-flex;
+  font-size: 1.1rem;
+  margin-inline: 2.5px;
+  position: relative;
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+.navbarnih a {
+  margin: 0 10px;
+  color: var(--pink);
+  text-decoration: none;
+  align-items: inline-flex;
+}
+
+.navbar .navbarnih a:hover {
+  color: var(--putih);
+}
+
+.navbar.navbarnih a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--putih);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbarnih a:hover::after {
+  transform: scaleX(0.3);
+  color: var(--putih);
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--putih);
+}
+
+.navbar .navbar-extra span {
+  color: var(--pink);
+  margin: 0 0.5rem;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+/* Kelas Aktif */
+.active2 {
+  color: var(--putih) !important;
+  border-bottom: 2px solid var(--putih);
+}
+
+.carousel {  
+  margin-top: 1rem;
+  margin-inline: 2rem;
+}
+
+.carousel-inner {
+  bottom: 0;
+  width: 100%;
+  border-radius: 1.5rem;
+  position: center;
+}
+
+.carousel-inner .carousel-item h5 {
+  color: var(--hitam);
+}
+
+.isi {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  position: relative;
+}
+
+.content {
+  padding: 1rem 1rem;
+  max-width: 60rem;
+  position: relative;
+}
+
+.content h1 {
+  font-size: 1.8rem;
+  color: var(--maroon);
+  text-shadow: 1px 1px 3px rgba(99, 0, 0, 1) 90%;
+  margin-top: 2.5rem;
+  margin-left: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 0.3;
+  font-weight: bold;
+}
+
+.content h1 span {
+  color: var(--hitam);
+}
+
+.content .cta {
+  z-index: 2;
+  position: relative;
+  top: 50px;
+  left: 10px;
+  margin-left: 2rem;
+  padding: 0.8rem 2.6rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--maroon);
+  background-color: var(--putih);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(99, 0, 0, 1);
+  transition: transform 0.3s ease;
+}
+
+.content .cta:hover {
+  transform: scale(1.1);
+  color: var(--putih);
+  background-color: var(--maroon);
+}
+
+.fotok {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.rounded-img {
+  border-radius: 1.5rem;
+}
+
+.size-img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.shadow {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.img-hover {
+  transition: transform 0.3s ease;
+}
+
+.img-hover:hover {
+  transform: scale(1.1);
+}
+
+.size-img-carousel {
+  height: 125px;
+  object-fit: cover;
+}
+
+.img-paralax {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+}
+
+.content2 {
+  padding: 1rem 10%;
+  width: 100%;
+  height: 100rem;
+  background-color: #630000;
+  margin-top: 12rem;
+}
+
+.content2 h1{
+  font-size: 2rem;
+  color: var(--putih);
+  text-shadow: 1px 1px 3px rgba(99, 0, 0, 1) 90%;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  line-height: 0.3;
+  font-weight: bold;
+}
+
+.content2 p{
+  color: #EEEBDD;
+}
