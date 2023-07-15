@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AMBATIX</title>
+        <!-- boostrap logo di navbar start -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+            />
+        <link rel="stylesheet" href="css/contact.css" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+
+        <!-- feather icons -->
+        <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    </head>
+    <main>
+        <body>
+         <!-- navbar -->
+        <nav class="navbar shadow">
+            <div class="navbarlogo" onclick="move('index.html')">
+                <img src="foto/tulisanambatix.png" alt="Logo" width="174" height="74" />
+            </div>
+            <div class="navbarnih">
+                <a onclick="move('index.html')">Home</a>
+                <a onclick="move('about.html')">About</a>
+                <a onclick="move('katalog.html')">Catalogue</a>
+                <a class="active2" onclick="move('contact.html')">Contact</a>
+            </div>
+            <div class="navbar-extra">
+                <span onclick="move('katalog.html')" id="search"><i data-feather="search"></i></span>
+                <span onclick="move('form.html')" id="shopping-cart"><i data-feather="shopping-cart"></i></span>
+            </div>
+        </nav>
+        <!-- navbar end -->
+        
+        <div class="contactUs">
+            <div class="box">
+                <!-- Form -->
+                <div class="contact form">
+                    <h3>KIRIMKAN PESANMU</h3>
+                    <form action="#">
+                        <div class="formBox">
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <span>Nama Depan</span>
+                                    <input
+                                        type="text"
+                                        placeholder="Masukkan Nama Depan"
+                                        name="contact-name"
+                                        id="contact-name"
+                                        autofocus
+                                        required
+                                        oninvalid="this.setCustomValidity('ini harus diisi!')"
+                                        oninput="this.setCustomValidity('')"
+                                        autocomplete="off"
+                                    />
+                                </div>
+                                <div class="inputBox">
+                                    <span>Nama Belakang</span>
+                                    <input
+                                        type="text"
+                                        placeholder="Masukkan Nama Belakang"
+                                        name="contact-name2"
+                                        id="contact-name2"
+                                        autofocus
+                                        required
+                                        oninvalid="this.setCustomValidity('ini harus diisi!')"
+                                        oninput="this.setCustomValidity('')"
+                                        autocomplete="off"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <span>Email</span>
+                                    <input
+                                        type="email"
+                                        placeholder="Masukkan Email"
+                                        name="contact-email"
+                                        id="contact-email"
+                                        autofocus
+                                        required
+                                        oninvalid="this.setCustomValidity('ini harus diisi!')"
+                                        oninput="this.setCustomValidity('')"
+                                        autocomplete="off"
+                                    />
+                                </div>
+                                <div class="inputBox">
+                                    <span>No. Telepon</span>
+                                    <input
+                                        type="telp"
+                                        placeholder="No telp"
+                                        name="contact-name"
+                                        id="contact-name"
+                                        autofocus
+                                        required
+                                        pattern="(\+62|62|0)8[1-9][0-9]{6,9}$"
+                                        oninvalid="this.setCustomValidity('ini harus diisi!')"
+                                        oninput="this.setCustomValidity('')"
+                                        autocomplete="off"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <span>Pesan</span>
+                                    <textarea
+                                        placeholder="Pesan"
+                                        autofocus
+                                        required
+                                        oninvalid="this.setCustomValidity('ini harus diisi!')"
+                                        oninput="this.setCustomValidity('')"
+                                        autocomplete="off"
+                                    ></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <button type="submit" class="btn btn-primary1" style="width: 15%;" onclick="move('thankss.html')">KIRIM</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Info Box -->
+                <div class="contact info">
+                    <h3>Informasi</h3>
+                    <div class="infoBox">
+                        <div class="infoBox">
+                            <ul class="b-nav" style="padding: 0%;">
+                                <li style="list-style-type: none;"><button class="btn btn-primary" onclick="move('index.html')">Home</button></li>
+                                <li style="list-style-type: none;"><button class="btn btn-primary" onclick="move('about.html')">About</button></li>
+                                <li style="list-style-type: none;"><button class="btn btn-primary" onclick="move('katalog.html')">Catalogue</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br />
+
+                    <h4>Jam Kerja</h4>
+                    <div class="infoBox">
+                        <div class="infoBox">
+                            <ul class="b-nav">
+                                <li>
+                                    <p>
+                                        Senin-Rabu <br />
+                                        08.00 WIB-18.00 WIB
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Kamis-Jum'at <br />
+                                        09.00 WIB-17.00 WIB
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="contact map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.2818903271022!2d110.40647117511342!3d-7.759899576956635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a599bd3bdc4ef%3A0x6f1714b0c4544586!2sUniversity%20of%20Amikom%20Yogyakarta!5e0!3m2!1sen!2sid!4v1688558189980!5m2!1sen!2sid"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container-foot">
+                <div class="logo-footer">
+                    <img style="width: 12rem; height: auto;" src="foto/tulisanambatix.png" alt="Logo">
+                </div>
+                <div class="address">
+                    <h5>ADDRESS</h5>
+                    <p>Condong Catur,</p>
+                    <p>Sleman, D.I. Yogyakarta,</p>
+                    <p>Indonesia.</p>
+                </div>
+                <div class="social">
+                    <h5>SOCIAL MEDIA</h5>
+                    <p>Instagram : @ambatix</p>
+                    <p>Twitter : @ambatix</p>
+                </div>
+                <div class="question">
+                    <h5>QUESTION</h5>
+                    <p>If you have a questions, just contact us</p>
+                    <button onclick="move('contact.html')" class="btn btn-secondary">here</button>
+                </div>
+            </div>
+          </footer>
+        </main>
+        <script>
+            feather.replace();
+             // Javascript untuk pindah file
+            function move(address){
+                window.location.href = address;
+            }
+        </script>
+    </body>
+</html>

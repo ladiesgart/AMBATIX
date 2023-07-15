@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AMBATIX</title>
+     <!-- font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   
+     <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+            />
+
+     <link
+       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+       rel="stylesheet"
+     />
+     
+  <style>
+    :root {
+    --hitam: #3c2525;
+    --maroon: #630000;
+    --pink: #D8B6A4;
+    --putih: #EEEBDD;
+  }
+    body {
+      text-align: left;
+      font-family: "poppins", sans-serif;
+      background-color: var(--pink);
+    }
+    .thanks{
+      padding: 6rem 3rem;
+      margin-top: 2rem;
+    }
+    .thanks h1 {
+      font-size: 5rem;
+      display: inline-block;
+      color: var(--hitam);
+      font-weight: 600;
+    }
+    .thanks p {
+      font-size: 2.3rem;
+      display: inline-block;
+      color: var(--hitam);
+    }
+    .btn{
+    margin-top: 0.5rem;
+   }
+   .btn-secondary{
+    color: #630000;
+    background-color: var(--putih);
+    border: 1px solid var(--pink);
+    box-shadow: 1px 1px 3px rgba(99, 0, 0, 1); 
+  }
+  .btn-secondary:hover{
+    color: var(--putih);
+    background-color: var(--maroon);
+    border: 2px solid var(--putih);
+  }
+  .container-foot {
+    width: 100%;
+    display: flex;
+    padding: 2rem 4rem;
+    align-items: start;
+    justify-content: center;
+    background-color: var(--hitam);
+    margin-top: 10rem;
+  }
+  
+  .container-foot div{
+    margin: 0 1rem;
+  }
+  
+  .container-foot h5 {
+    color: var(--putih);
+  }
+  
+  .container-foot p {
+    color: var(--putih);
+  }
+  
+  .logo-footer{
+    margin-right: 8rem !important;
+  }
+  </style>
+</head>
+<body>
+  <div style="background-color: #630000; display: flex; justify-content: center; align-items: center;">
+    <img src="foto/tulisanambatix.png" style="height: 8rem;">
+    <div class="text-center" style="float: right; position: absolute; right: 2rem;">
+      <a class="btn btn-secondary btn-lg" onclick="move('index.html')">Kembali</a>
+    </div>
+  </div>
+  <div class="thanks" style="display: flex;">
+    <div>
+      <img src="foto/mbakmbak.jpeg" style="width: 25rem; height: 20rem;  margin-right: 2rem; display: inline-block; border-radius: 1.5rem; object-fit: cover;" />
+    </div>
+    <div>
+      <h1>YOUR MESSAGE HAS BEEN SENT</h1>
+      <p>Thank you for contact us, never hesitate to send another message.</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container-foot">
+      <div class="logo-footer">
+            <img style="width: 12rem; height: auto;" src="foto/tulisanambatix.png" alt="Logo">
+        </div>
+        <div class="address">
+            <h5>ADDRESS</h5>
+            <p>Condong Catur,</p>
+            <p>Sleman, D.I. Yogyakarta,</p>
+            <p>Indonesia.</p>
+        </div>
+        <div class="social">
+            <h5>SOCIAL MEDIA</h5>
+            <p>Instagram : @ambatix</p>
+            <p>Twitter : @ambatix</p>
+        </div>
+        <div class="question">
+            <h5>QUESTION</h5>
+            <p>If you have a questions, just contact us</p>
+            <button onclick="move('contact.html')" class="btn btn-secondary">here</button>
+        </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<script>
+  // Javascript untuk pindah file
+  function move(address){
+     window.location.href = address;
+   }
+</script>

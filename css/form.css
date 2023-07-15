@@ -1,0 +1,197 @@
+/* Mendefinisikan variabel warna */
+:root {
+    --hitam: #3c2525;
+    --maroon: #630000;
+    --pink: #D8B6A4;
+    --putih: #EEEBDD;
+  }
+  
+  /* Reset gaya default */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  /* Gaya dasar halaman */
+  body {
+    font-family: "poppins", sans-serif;
+    background-color: var(--pink);
+    color: var(--maroon);
+  }
+
+.container .jumbotron {
+    margin-top: 8rem;
+}
+
+.container .jumbotron h1 {
+  font-weight: 600;
+}
+
+  .shadow {
+    box-shadow: 1px 1px 3px rgba(99, 0, 0, 1);
+  }
+
+  .btn{
+    margin-top: 0.5rem;
+  }
+  
+  .btn-primary{
+    color: var(--putih);
+    background-color: var(--maroon);
+    border: 1px solid var(--maroon);
+    align-items: end;
+  }
+  
+  .btn-primary:hover{
+    color: var(--maroon);
+    background-color: var(--putih);
+    border: 2px solid var(--maroon);
+  }
+
+  .btn-secondary{
+    color: #630000;
+    background-color: var(--putih);
+    border: 1px solid var(--pink);
+    box-shadow: 1px 1px 3px rgba(99, 0, 0, 1); 
+  }
+  
+  .btn-secondary:hover{
+    color: var(--putih);
+    background-color: var(--maroon);
+    border: 2px solid var(--putih);
+  }
+  
+  /* Footer */
+.container-foot {
+    width: 100%;
+    display: flex;
+    padding: 2rem 4rem;
+    align-items: start;
+    justify-content: center;
+    background-color: var(--hitam);
+    margin-top: 15rem;
+  }
+  
+  .container-foot div{
+    margin: 0 1rem;
+  }
+  
+  .container-foot h5 {
+    color: var(--putih);
+  }
+  
+  .container-foot p {
+    color: var(--putih);
+  }
+  
+  .logo-footer{
+    margin-right: 8rem !important;
+  }
+
+  .form-control {
+    color: var(--hitam);
+    background-color: var(--putih);
+    border: 2px solid var(--maroon);
+  }
+  .form-select {
+    color: var(--hitam);
+    background-color: var(--putih);
+    border: 2px solid var(--maroon);
+  }
+
+  .form-check {
+    color: var(--hitam);
+  }
+
+.text-primary {
+  color: var(--hitam) !important;
+}
+
+.bg-primary {
+  background-color: var(--hitam) !important;
+}
+
+.list-group-item {
+  background-color: var(--putih) !important;
+  color: var(--maroon) !important;
+}
+
+.item2 {
+  background-color: var(--maroon) !important;
+}
+
+.text-success {
+  color: var(--putih) !important;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 4%;
+  background-color: var(--maroon);
+  border-bottom: 1px solid var(--maroon);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 9999;
+}
+
+.navbar .navbarlogo {
+  margin-right: auto;
+}
+
+.navbar .navbarnih a {
+  color: var(--pink);
+  display: inline-flex;
+  font-size: 1.1rem;
+  margin-inline: 2.5px;
+  position: relative;
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+.navbarnih a {
+  margin: 0 10px;
+  color: var(--pink);
+  text-decoration: none;
+  align-items: inline-flex;
+}
+
+.navbar .navbarnih a:hover {
+  color: var(--putih);
+}
+
+.navbar .navbar-extra span:hover {
+  color: var(--putih);
+}
+
+.navbar.navbarnih a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--putih);
+  transform: scaleX(0);
+}
+
+.navbar .navbar-extra span {
+  margin: 0 0.5rem;
+  color: var(--pink);
+  display: inline-flex;
+  text-decoration: none;
+}
+
+/* Kelas Aktif */
+.active2 {
+  border-radius: 2rem;
+  padding: 0.7rem 0.7rem;
+  background-color: #EEEBDD;
+  color: var(--maroon) !important;
+  box-shadow: 1px 1px 3px rgba(99, 0, 0, 1);
+}

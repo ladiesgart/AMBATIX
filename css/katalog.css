@@ -1,0 +1,297 @@
+/* Mendefinisikan variabel warna */
+:root {
+    --hitam: #3c2525;
+    --maroon: #630000;
+    --pink: #D8B6A4;
+    --putih: #EEEBDD;
+  }
+  
+  /* Reset gaya default */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  /* Gaya dasar halaman */
+  body {
+    font-family: "poppins", sans-serif;
+    background-color: var(--maroon);
+    color: var(--maroon);
+    min-height: 1000px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 4%;
+    background-color: var(--maroon);
+    border-bottom: 1px solid var(--maroon);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .navbar .navbarlogo {
+    margin-right: auto;
+  }
+  
+  .navbar .navbarnih a {
+    color: var(--pink);
+    display: inline-flex;
+    font-size: 1.1rem;
+    margin-inline: 2.5px;
+    position: relative;
+    margin-right: 25px;
+    text-decoration: none;
+  }
+  
+  .navbarnih a {
+    margin: 0 10px;
+    color: var(--pink);
+    text-decoration: none;
+    align-items: inline-flex;
+  }
+  
+  .navbar .navbarnih a:hover {
+    color: var(--putih);
+  }
+  
+  .navbar .navbar-extra span {
+    margin: 0 0.5rem;
+    color: var(--pink);
+    display: inline-flex;
+    text-decoration: none;
+  }
+
+  .navbar .navbar-extra span:hover {
+    color: var(--putih);
+  }
+  
+  .navbar.navbarnih a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--putih);
+    transform: scaleX(0);
+  }
+  
+  .navbar .navbar-extra span {
+    margin: 0 0.5rem;
+    color: var(--pink);
+    display: inline-flex;
+    text-decoration: none;
+  }
+  
+  /* Kelas Aktif */
+  .active2 {
+    border-radius: 0.7rem;
+    padding: 0.2rem 0.8rem;
+    background-color: #EEEBDD;
+    color: var(--maroon) !important;
+    box-shadow: 1px 1px 3px rgba(99, 0, 0, 1);
+  }
+  
+ .carousel {
+  margin-top: 0rem;
+  margin-inline: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 1px 1px 3px rgba(99, 0, 0, 1);
+ }
+
+ .carousel-inner {
+  bottom: 0;
+  width: 100%;
+  position: center;
+  border-radius: 1.5rem;
+}
+
+.size-img-carousel {
+  height: 20rem;
+  object-fit: cover;
+}
+
+.carousel-inner .carousel-item h3 {
+  color: var(--putih);
+}
+
+.btn-carousel {
+  color: var(--maroon);
+  background-color: var(--putih);
+  display: center;
+  
+}
+
+.btn-carousel:hover{
+  color: var(--putih);
+  background-color: var(--maroon);
+}
+
+.shadow {
+  box-shadow: 1px 1px 3px rgba(99, 0, 0, 1);
+}
+
+  .kitilig{
+    width: 100%; 
+    display: flex; 
+    padding: 0rem 8rem; 
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    display: flex;
+    margin-top: 0rem;
+    padding-top: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 5rem;
+    background-color: var(--pink);
+  }
+  
+  .caption{
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    display: flex;
+  }
+
+  .caption h1 {
+    color: var(--maroon);
+    font-weight: 700;
+    justify-content: center;
+    margin-top: 9rem;
+  }
+  
+  .kitilig .card {
+    background-color: var(--putih);
+    margin: 1rem 1.5rem;
+    padding: 0.5rem;
+    color: var(--maroon);
+    font-weight: 600;
+    justify-content: center;
+    box-shadow: 1px 1px 2px rgba(99, 0, 0, 1);
+  }
+  
+  .kitilig a{
+    width: 100%;
+    box-shadow: 1px 1px 2px rgba(99, 0, 0, 1);
+  }
+
+  .kitilig p{
+    font-weight: 400;
+  }
+  
+  .btn{
+    margin-top: 0.5rem;
+  }
+  
+  .btn-primary{
+    color: var(--putih);
+    background-color: var(--maroon);
+    border: 1px solid var(--maroon);
+    display: flex;
+    align-items: end;
+  }
+
+  .btn-primary:hover{
+    color: var(--maroon);
+    background-color: var(--putih);
+    border: 2px solid var(--maroon);
+  }
+  
+  .kitilig .card-img-top {
+    width: 12rem;
+    height: 10rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+
+  .kitilig h5{
+    font-weight: 600;
+  }
+  
+  .card-body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .container-foot {
+    width: 100%;
+    display: flex;
+    padding: 2rem 4rem;
+    margin-top: 0rem;
+    align-items: start;
+    justify-content: center;
+    background-color: var(--hitam);
+  }
+  
+  .container-foot div{
+    margin: 0 1rem;
+  }
+  
+  .container-foot h5 {
+    color: var(--putih);
+  }
+  
+  .container-foot p {
+    color: var(--putih);
+  }
+  
+  .logo-footer{
+    margin-right: 8rem !important;
+  }
+  
+  .card-body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .btn-secondary{
+    color: #630000;
+    background-color: var(--putih);
+    border: 1px solid var(--pink);
+    box-shadow: 1px 1px 3px rgba(99, 0, 0, 1); 
+  }
+  
+  .btn-secondary:hover{
+    color: var(--putih);
+    background-color: var(--maroon);
+    border: 1px solid var(--maroon);
+  }
+
+  .btn-secondary1{
+    color: #630000;
+    background-color: var(--putih);
+    border: 1px solid var(--pink);
+    box-shadow: 1px 1px 3px rgba(99, 0, 0, 1);
+    margin-top: 5rem;
+  }
+  
+  .btn-secondary1:hover{
+    color: var(--putih);
+    background-color: var(--maroon);
+    border: 1px solid var(--maroon);
+  }
+
+  .img-batik2 {
+    top: 62%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .img-batik3 {
+    top: 71%;
+    width: 100%;
+    position: absolute;
+  }
+  

@@ -1,0 +1,17 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    background: white;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+text{
+    text-align: center;
+}
